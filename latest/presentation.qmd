@@ -5,6 +5,7 @@ footer: <https://computo.sfds.asso.fr>
 logo: img/logo_text_vertical.png
 date: last-modified
 date-format: long
+bibliography: references.bib
 lang: fr
 format: 
   revealjs: 
@@ -19,6 +20,55 @@ format:
       data-background-position: top 30px left	30px
     preview-links: auto
 ---
+
+
+
+## Une crise de la reproductibilité en science {.smaller}
+
+![](img/theEconomist_2013_extract.png){width='120'}
+
+@the_economist
+
+
+## Dans toutes les sciences ? {.smaller}
+
+![](img/nature_2016_extract.png){width='180'}
+
+
+## Statistique et IA  {.smaller}
+
+Les ingrédients de la recherche en statistique 
+
+- des données, 
+- des algorithmes,
+- des logiciels.
+
+## C'est différent en mathématique {.smaller}
+
+mais 
+
+
+![](img/Delyon_2023_part1.png){width='180'}
+
+## C'est différent en mathématique {.smaller}
+
+on trouve des expériences numériques 
+
+
+![](img/Delyon_2023_part2.png){width='600'}
+
+
+## C'est différent en mathématique {.smaller}
+
+Petit tips pour reproduire le résulat 
+
+
+![](img/Delyon_2023_part3.png){width='600'}
+
+
+## La place des données 
+
+
 
 ## Comité éditorial et support technique {.smaller}
 
