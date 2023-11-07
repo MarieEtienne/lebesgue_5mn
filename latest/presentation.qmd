@@ -36,20 +36,6 @@ editor:
 
 @baker20161 (cité 3237 fois)
 
-## Constat
-
-Multiplication des journaux "traditionnels" ...
-
-😔 dévalorisation des résultats négatifs
-
-😓 des délais de relecture de plus en plus courts 
-
-😥 peu/pas assez de valorisation du code et des études de cas
-
-😱 ↓ de la qualité des publications et du temps consacré à un article
-
-😱 ↓ de la reproductibilité *scientifique* (analyses, expériences)
-
 ## ~~Statistique~~ Intelligence Artificielle {.smaller}
 
 Les ingrédients de la recherche en ~~statistique~~ IA
@@ -65,6 +51,265 @@ Les ingrédients de la recherche en ~~statistique~~ IA
 @alston2021beginner
 
 ![](img/bes2.1801_crop.png){width="600"}
+
+
+
+## Etape 3 - All Inclusive
+
+::: callout-tip
+### Un seul document pour
+
+::: fragment
+-   Texte de l'article,
+-   code pour les analyses,
+-   code pour les figures
+:::
+
+:::
+
+::: fragment
+Grâce à [Quarto](https://quarto.org/) par exemple :
+
+`Un modèle d'analyse de la variance pour comprendre les variations de fréquence cardiaque en fonction de l'activité $Y_{ik}=\mu_i+E_{ik}$`
+
+```{r}
+#| echo: fenced
+#| code-fold: false
+#| eval: false
+#| label: example
+
+M1 <- lm(freqC ~ Activite, data = freqdata)
+summary(M1)$coefficients
+```
+:::
+
+## C'est différent en mathématique ! {.smaller}
+
+mais en fait non
+
+![](img/Delyon_2023_part1.png){width="180"}
+
+## C'est différent en mathématique ! {.smaller}
+
+on trouve des expériences numériques
+
+![](img/Delyon_2023_part2.png){width="600"}
+
+## C'est différent en mathématique ! {.smaller}
+
+Petit tips pour reproduire le résulat
+
+![](img/Delyon_2023_part3.png){width="600"}
+
+## Bien faire les choses
+
+Les outils de dévelopement logiciel sont devenus beaucoup plus
+accessibles ces dernières années, toutefois produire une analyse
+reproductible reste
+
+::: nonincremental
+-   plus long,
+-   plus pénible,
+-   peu valorisé.
+:::
+
+## Une publication pour valoriser les comportements vertueux
+
+En 2020, La Société Française de Stat. missionne une cellule "publication"
+([Julien Chiquet](https://jchiquet.github.io/), Université Paris-Saclay puis [Pierre Neuvial](https://pneuvial.github.io/), Institut Mathématique
+de Toulouse) pour faire émerger une nouvelle revue
+
+::: columns
+
+::: {.column width="40%"}
+
+::: callout-note
+## Constat
+
+Multiplication des journaux "traditionnels"...
+
+😔 dévalorisation des résultats négatifs
+
+😥 peu/pas assez de valorisation du code et des études de cas
+
+😱 ↓ de la qualité des publications et du temps consacré à un article
+
+😱 ↓ de la reproductibilité *scientifique* (analyses, expériences)
+:::
+
+:::
+
+::: {.column width="40%"}
+
+::: callout-tip
+
+## Point de vue
+
+-   besoin de renouvellement de la mise en œuvre de la recherche
+    scientifique
+-   besoin de normes plus élevées en matière de publication des
+    résultats
+:::
+
+$\rightsquigarrow$ Émergence de l'idée de Computo
+:::
+
+:::
+
+
+## Fonctionnement
+
+::: columns
+::: {.column width="65%"}
+### Système d'écriture
+
+texte (markdown) + math ($\LaTeX$) + code (Python/R/Julia), biblio
+(bib$\TeX$)
+
+### Système de publication
+
+Gestion de l'environnement, Compilation, Publication multiformats
+
+### Système de relecture
+
+-   Échanges anonymes publiés après acceptation
+-   Bases de relecteurs/relectrices
+-   \[*Passage de Scholastica à Open review en cours*\]
+:::
+
+::: {.column width="35%"}
+### Solutions/Proto
+
+Expérience renouvellée
+
+[![](img/quarto.png){height="40px"}](https://quarto.org)
+
+Reproductibilité éditoriale
+
+[![](img/github_actions.png){height="80px"}](https://github.com/features/actions)
+
+Validation scientifique
+
+[![](img/openreview.png){height="80px"}](https://openreview.net/)
+:::
+:::
+
+## Éléments de discussion
+
+### Sur certains choix
+
+-   `quarto`: dynamique, langage agnostique, issu de la communauté
+    (pandoc)
+-   `Github`: dynamique, lien avec `quarto`, pas institutionnel
+-   Rapport des relecteurs publics : quid du droit à l'oubli ?
+
+
+## Soyez vertueux
+
+::: columns
+::: {.column width="50%"}
+
+::: callout-tip
+### Comment aider?
+
+-   [En soumettant vos travaux!](https://computo.sfds.asso.fr/submit/)
+-   En se proposant **relecteur/relectrice**
+:::
+
+:::
+
+::: {.column width="50%"}
+### À propos du logo
+
+![](img/computo_concept.png){width="300px"}
+:::
+:::
+
+
+## References
+
+::: {#refs}
+:::
+
+
+## Philosophie
+
+::: callout-note
+### Périmètre scientifique
+
+**Promouvoir les contributions en statistique et machine-learning
+permettant d'évaluer la pertinence d'un modèle et des méthodes associées
+vis-à-vis d'une question scientifique spécifique**
+:::
+
+::: callout-tip
+### Ouvert
+
+-   Open accès "diamant" (gratuité totale et réutilisation possible)
+-   🅭 🅯 Contenu publié sous licence CC-BY (crédit, modification)
+-   Rapports de lecture et discussions disponibles après acceptation
+    (relecteurs anonymes)
+
+$\rightsquigarrow$ En accord avec le [Budapest Open Access Initiative
+(BOAI)](https://www.budapestopenaccessinitiative.org/) and le [Plan
+S](https://www.coalition-s.org/addendum-to-the-coalition-s-guidance-on-the-implementation-of-plan-s/principles-and-implementation/)
+:::
+
+::: callout-important
+### Reproductible
+
+-   La reproductibilité numérique des résultats est une condition
+    nécessaire
+-   Code et données doivent être disponibles, pour partie exécuté et
+    intégralement exécutable
+:::
+
+## Mise en place
+
+Lancement officiel fin 2021
+
+[![](img/computo_website.png){height="300px"}](https://computo.sfds.asso.fr)
+[![](img/computo_github-group.png){height="300px"}](https://github.com/computorg/)
+
+### Modèle "économique"
+
+-   Quelques acharné.e.s (quelques ulcères)
+-   Outils de la communauté (Pandoc, Quarto, GitHub/lab)
+-   Soutiens Institutionnels (INRAE, INRIA, CNRS, SFdS)
+
+
+## Bilan après deux ans de fonctionnement
+
+<br/>
+
+🥲 Processus opérationnel + doi, ISSN
+
+🙂 4 articles publiés, 4 en révision, 3 en relecture
+
+🙂 des présentations (Montpellier, Toronto, Humastica, Grenoble, RR2023,
+GDR Ecostat, 5 Minutes)
+
+🙂 [Réseau français Science
+Reproductible](https://www.recherche-reproductible.fr/)
+
+🤯 Difficulté à trouver des relecteurs
+
+🤔 Support institutionnel ?
+
+<br/>
+
+## Perpectives
+
+-   Mise à disposition de moyens computationnels
+-   Support Gitlab complet (CI, docker, registre, etc.)
+
+## Positionement/inspiration
+
+-   [Peer Community-In](https://peercommunityin.org/),
+    [EpiSciences](https://www.episciences.org/) : philosophie différente
+-   <https://rescience.github.io/> : "remake' de l'existant
+-   <https://distill.pub> : techniquement compliqué et pur IA
+
 
 ## Etape 1 - Old School
 
@@ -117,7 +362,7 @@ De l'importance de garder des traces des étapes du dévelopement
 -   Produire des packages (R/ Python / Julia) déposées sur des
     plateformes qui vérifient la qualité de la forme du code
     ([CRAN](https://cran.r-project.org/),
-    \[ROpenSci\]\](https://ropensci.org/)) et de la documentation
+    [ROpenSci](https://ropensci.org/)) et de la documentation
 
 -   Utiliser des outils de gestion de versions, par exemple git et des
     repos publics [GitHub](https://github.com/),
@@ -129,22 +374,22 @@ De l'importance de garder des traces des étapes du dévelopement
 -   Ecrire des tests unitaires, ....
 :::
 
-## Etape 2 - La Geekitude
+<!-- ## Etape 2 - La Geekitude -->
 
-::: columns
+<!-- ::: columns -->
 
-::: {.column width="45%"}
-![](img/commits.png){width="450"}
+<!-- ::: {.column width="45%"} -->
+<!-- ![](img/commits.png){width="450"} -->
 
-:::
+<!-- ::: -->
 
-::: {.column width="45%"}
+<!-- ::: {.column width="45%"} -->
 
-![](img/historique.png){width="450"}
+<!-- ![](img/historique.png){width="450"} -->
 
-:::
+<!-- ::: -->
 
-:::
+<!-- ::: -->
 
 ## Etape 3 - Old School
 
@@ -152,283 +397,3 @@ De l'importance de garder des traces des étapes du dévelopement
     CTRL-V)
 
 -   Donner le pseudo code
-
-## Etape 3 - All Inclusive
-
-### Un seul document pour
-
-::: fragment
--   Texte de l'article,
--   code pour les analyses,
--   code pour les figures
-:::
-
-::: fragment
-Grâce à [Quarto](https://quarto.org/) par exemple :
-
-`Un modèle d'analyse de la variance pour comprendre les variations de fréquence cardiaque en fonction de l'activité $Y_{ik}=\mu_i+E_{ik}$`
-
-```{r}
-#| echo: fenced
-#| code-fold: false
-#| eval: false
-#| label: example
-
-M1 <- lm(freqC ~ Activite, data = freqdata)
-summary(M1)$coefficients
-```
-:::
-
-## C'est différent en mathématique ! {.smaller}
-
-mais en fait non
-
-![](img/Delyon_2023_part1.png){width="180"}
-
-## C'est différent en mathématique ! {.smaller}
-
-on trouve des expériences numériques
-
-![](img/Delyon_2023_part2.png){width="600"}
-
-## C'est différent en mathématique ! {.smaller}
-
-Petit tips pour reproduire le résulat
-
-![](img/Delyon_2023_part3.png){width="600"}
-
-## Bien faire les choses
-
-Les outils de dévelopement logiciel sont devenus beaucoup plus
-accessibles ces dernières années, toutefois produire une analyse
-reproductible reste
-
-::: nonincremental
--   plus long,
--   plus pénible,
--   peu valorisé.
-:::
-
-## Origine (\~ 2020s)
-
-La Société Française de Stat. missionne une cellule "publication"
-(Julien Chiquet, Paris-Saclay puis Pierre Neuvial, Institut Mathématique
-de Toulouse) pour faire émerger une nouvelle revue
-
-::: callout-note
-## Constat
-
-Multiplication des journaux "traditionnels"...
-
-😔 dévalorisation des résultats négatifs
-
-😥 peu/pas assez de valorisation du code et des études de cas
-
-😱 ↓ de la qualité des publications et du temps consacré à un article
-
-😱 ↓ de la reproductibilité *scientifique* (analyses, expériences)
-:::
-
-::: callout-tip
-## Point de vue
-
--   besoin de renouvellement de la mise en œuvre de la recherche
-    scientifique
--   besoin de normes plus élevées en matière de publication des
-    résultats
-:::
-
-$\rightsquigarrow$ Émergence de l'idée de Computo
-
-## Comité éditorial et support technique {.smaller}
-
-::: columns
-::: {.column width="33%"}
-#### Julien Chiquet (Éditeur en chef)
-
-<small>Apprentissage stat., DR INRAE<br /> Université
-Paris-Saclay</small>
-
-![](../people/julien.jpg){width="120"}
-
-#### Fra.-Dav. Collin, Ghislain Durif
-
-<small>Informatique Statistique, IR CNRS<br/> IMAG Montpellier, ENS
-LYON</small>
-
-![](../people/fradav.jpg){width="120"}![](../people/ghislain.jpg){width="120"}
-:::
-
-::: {.column width="22%"}
-#### Pierre Neuvial
-
-<small>Statistique, DR CNRS<br/> IMT Toulouse</small>
-
-![](../people/pierre.jpg){width="120"}
-
-#### Marie-Pierre Étienne
-
-<small>Statistique, MCF<br/> Institut Agro Rennes-Angers</small>
-
-![](../people/marie-pierre.jpg){width="120"}
-:::
-
-::: {.column width="22%"}
-#### Mathurin Massias
-
-<small>Optim./Machine-Learning<br/> CR INRIA Lyon</small>
-
-![](../people/mathurin.jpg){width="120"}
-
-#### Chloé Azencott
-
-<small>Machine Learning <br/> CR MinesParisTech</small>
-
-![](../people/chloe.jpg){width="120"}
-:::
-
-::: {.column width="22%"}
-#### Nelle Varoquaux
-
-<small>Machine learning, CR CNRS<br/> Université Grenoble Alpes</small>
-
-![](../people/nelle.jpg){width="120"}
-:::
-:::
-
-## Philosophie
-
-::: callout-note
-### Périmètre scientifique
-
-**Promouvoir les contributions en statistique et machine-learning
-permettant d'évaluer la pertinence d'un modèle et des méthodes associées
-vis-à-vis d'une question scientifique spécifique**
-:::
-
-::: callout-tip
-### Ouvert
-
--   Open accès "diamant" (gratuité totale et réutilisation possible)
--   🅭 🅯 Contenu publié sous licence CC-BY (crédit, modification)
--   Rapports de lecture et discussions disponibles après acceptation
-    (relecteurs anonymes)
-
-$\rightsquigarrow$ En accord avec le [Budapest Open Access Initiative
-(BOAI)](https://www.budapestopenaccessinitiative.org/) and le [Plan
-S](https://www.coalition-s.org/addendum-to-the-coalition-s-guidance-on-the-implementation-of-plan-s/principles-and-implementation/)
-:::
-
-::: callout-important
-### Reproductible
-
--   La reproductibilité numérique des résultats est une condition
-    nécessaire
--   Code et données doivent être disponibles, pour partie exécuté et
-    intégralement exécutable
-:::
-
-## Mise en place
-
-Lancement officiel fin 2021
-
-[![](img/computo_website.png){height="300px"}](https://computo.sfds.asso.fr)
-[![](img/computo_github-group.png){height="300px"}](https://github.com/computorg/)
-
-### Modèle "économique"
-
--   Quelques acharné.e.s (quelques ulcères)
--   Outils de la communauté (Pandoc, Quarto, GitHub/lab)
--   Soutiens Institutionnels (INRAE, INRIA, CNRS, SFdS)
-
-## Fonctionnement
-
-::: columns
-::: {.column width="65%"}
-### Système d'écriture
-
-texte (markdown) + math ($\LaTeX$) + code (Python/R/Julia), biblio
-(bib$\TeX$)
-
-### Système de publication
-
-Gestion de l'environnement, Compilation, Publication multiformats
-
-### Système de relecture
-
--   Échanges anonymes publiés après acceptation
--   Bases de relecteurs/relectrices
--   \[*Passage de Scholastica à Open review en cours*\]
-:::
-
-::: {.column width="35%"}
-### Solutions/Proto
-
-Expérience renouvellée
-
-[![](img/quarto.png){height="40px"}](https://quarto.org)
-
-Reproductibilité éditoriale
-
-[![](img/github_actions.png){height="80px"}](https://github.com/features/actions)
-
-Validation scientifique
-
-[![](img/openreview.png){height="80px"}](https://openreview.net/)
-:::
-:::
-
-## Bilan après deux ans de fonctionnement
-
-<br/>
-
-🥲 Processus opérationnel + doi, ISSN
-
-🙂 4 articles publiés, 4 en révision, 3 en relecture
-
-🙂 des présentations (Montpellier, Toronto, Humastica, Grenoble, RR2023,
-GDR Ecostat, 5 Minutes)
-
-🙂 [Réseau français Science
-Reproductible](https://www.recherche-reproductible.fr/)
-
-🤯 Difficulté à trouver des relecteurs
-
-🤔 Support institutionnel ?
-
-<br/>
-
-::: columns
-::: {.column width="50%"}
-### Comment aider?
-
--   [En soumettant vos travaux!](https://computo.sfds.asso.fr/submit/)
--   En se proposant **relecteur/relectrice**
-:::
-
-::: {.column width="50%"}
-### À propos du logo
-
-![](img/computo_concept.png){width="300px"}
-:::
-:::
-
-## Éléments de discussion
-
-### Sur certains choix
-
--   `quarto`: dynamique, langage agnostique, issu de la communauté
-    (pandoc)
--   `Github`: dynamique, lien avec `quarto`, pas institutionnel
-
-### Perpectives
-
--   Mise à disposition de moyens computationnels
--   Support Gitlab complet (CI, docker, registre, etc.)
-
-### Positionement/inspiration
-
--   [Peer Community-In](https://peercommunityin.org/),
-    [EpiSciences](https://www.episciences.org/) : philosophie différente
--   <https://rescience.github.io/> : "remake' de l'existant
--   <https://distill.pub> : techniquement compliqué et pur IA
