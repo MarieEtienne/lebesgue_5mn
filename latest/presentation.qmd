@@ -3,7 +3,7 @@ title: "Science Reproductible"
 subtitle: "Au-delà du CTRL-C CTRL-V <br/><br/> <small><https://marietienne.github.io/lebesgue_5mn></small>"
 footer: <https://computo.sfds.asso.fr>
 logo: img/logo_text_vertical.png
-date: last-modified
+date: "7 Novembre 2023"
 date-format: long
 bibliography: references.bib
 lang: fr
@@ -70,16 +70,17 @@ Les ingrédients de la recherche en ~~statistique~~ IA
 ::: fragment
 Grâce à [Quarto](https://quarto.org/) par exemple :
 
-`Un modèle d'analyse de la variance pour comprendre les variations de fréquence cardiaque en fonction de l'activité $Y_{ik}=\mu_i+E_{ik}$`
+![](img/quarto_example.png){width="800"}
+<!-- `Un modèle d'analyse de la variance pour comprendre les variations de fréquence cardiaque en fonction de l'activité $Y_{ik}=\mu_i+E_{ik}$` -->
 
-```{r}
-#| echo: fenced
-#| code-fold: false
-#| eval: false
-#| label: example
+<!-- ```{r} -->
+<!-- #| echo: fenced -->
+<!-- #| code-fold: false -->
+<!-- #| eval: false -->
+<!-- #| label: example -->
 
-M1 <- lm(freqC ~ Activite, data = freqdata)
-summary(M1)$coefficients
+<!-- M1 <- lm(freqC ~ Activite, data = freqdata) -->
+<!-- summary(M1)$coefficients -->
 ```
 :::
 
@@ -232,147 +233,147 @@ Validation scientifique
 :::
 
 
-## Philosophie
+<!-- ## Philosophie -->
 
-::: callout-note
-### Périmètre scientifique
+<!-- ::: callout-note -->
+<!-- ### Périmètre scientifique -->
 
-**Promouvoir les contributions en statistique et machine-learning
-permettant d'évaluer la pertinence d'un modèle et des méthodes associées
-vis-à-vis d'une question scientifique spécifique**
-:::
+<!-- **Promouvoir les contributions en statistique et machine-learning -->
+<!-- permettant d'évaluer la pertinence d'un modèle et des méthodes associées -->
+<!-- vis-à-vis d'une question scientifique spécifique** -->
+<!-- ::: -->
 
-::: callout-tip
-### Ouvert
+<!-- ::: callout-tip -->
+<!-- ### Ouvert -->
 
--   Open accès "diamant" (gratuité totale et réutilisation possible)
--   🅭 🅯 Contenu publié sous licence CC-BY (crédit, modification)
--   Rapports de lecture et discussions disponibles après acceptation
-    (relecteurs anonymes)
+<!-- -   Open accès "diamant" (gratuité totale et réutilisation possible) -->
+<!-- -   🅭 🅯 Contenu publié sous licence CC-BY (crédit, modification) -->
+<!-- -   Rapports de lecture et discussions disponibles après acceptation -->
+<!--     (relecteurs anonymes) -->
 
-$\rightsquigarrow$ En accord avec le [Budapest Open Access Initiative
-(BOAI)](https://www.budapestopenaccessinitiative.org/) and le [Plan
-S](https://www.coalition-s.org/addendum-to-the-coalition-s-guidance-on-the-implementation-of-plan-s/principles-and-implementation/)
-:::
+<!-- $\rightsquigarrow$ En accord avec le [Budapest Open Access Initiative -->
+<!-- (BOAI)](https://www.budapestopenaccessinitiative.org/) and le [Plan -->
+<!-- S](https://www.coalition-s.org/addendum-to-the-coalition-s-guidance-on-the-implementation-of-plan-s/principles-and-implementation/) -->
+<!-- ::: -->
 
-::: callout-important
-### Reproductible
+<!-- ::: callout-important -->
+<!-- ### Reproductible -->
 
--   La reproductibilité numérique des résultats est une condition
-    nécessaire
--   Code et données doivent être disponibles, pour partie exécuté et
-    intégralement exécutable
-:::
+<!-- -   La reproductibilité numérique des résultats est une condition -->
+<!--     nécessaire -->
+<!-- -   Code et données doivent être disponibles, pour partie exécuté et -->
+<!--     intégralement exécutable -->
+<!-- ::: -->
 
-## Mise en place
+<!-- ## Mise en place -->
 
-Lancement officiel fin 2021
+<!-- Lancement officiel fin 2021 -->
 
-[![](img/computo_website.png){height="300px"}](https://computo.sfds.asso.fr)
-[![](img/computo_github-group.png){height="300px"}](https://github.com/computorg/)
+<!-- [![](img/computo_website.png){height="300px"}](https://computo.sfds.asso.fr) -->
+<!-- [![](img/computo_github-group.png){height="300px"}](https://github.com/computorg/) -->
 
-### Modèle "économique"
+<!-- ### Modèle "économique" -->
 
--   Quelques acharné.e.s (quelques ulcères)
--   Outils de la communauté (Pandoc, Quarto, GitHub/lab)
--   Soutiens Institutionnels (INRAE, INRIA, CNRS, SFdS)
-
-
-## Bilan après deux ans de fonctionnement
-
-<br/>
-
-🥲 Processus opérationnel + doi, ISSN
-
-🙂 4 articles publiés, 4 en révision, 3 en relecture
-
-🙂 des présentations (Montpellier, Toronto, Humastica, Grenoble, RR2023,
-GDR Ecostat, 5 Minutes)
-
-🙂 [Réseau français Science
-Reproductible](https://www.recherche-reproductible.fr/)
-
-🤯 Difficulté à trouver des relecteurs
-
-🤔 Support institutionnel ?
-
-<br/>
-
-## Perpectives
-
--   Mise à disposition de moyens computationnels
--   Support Gitlab complet (CI, docker, registre, etc.)
-
-## Positionement/inspiration
-
--   [Peer Community-In](https://peercommunityin.org/),
-    [EpiSciences](https://www.episciences.org/) : philosophie différente
--   <https://rescience.github.io/> : "remake' de l'existant
--   <https://distill.pub> : techniquement compliqué et pur IA
+<!-- -   Quelques acharné.e.s (quelques ulcères) -->
+<!-- -   Outils de la communauté (Pandoc, Quarto, GitHub/lab) -->
+<!-- -   Soutiens Institutionnels (INRAE, INRIA, CNRS, SFdS) -->
 
 
-## Etape 1 - Old School
+<!-- ## Bilan après deux ans de fonctionnement -->
 
-::: columns
-::: {.column width="30%"}
-![](img/disquettes.jpg){width="400"}
-:::
+<!-- <br/> -->
 
-::: {.column width="30%"}
-![](img/DD.jpg){.fragment width="400"}
-:::
-:::
+<!-- 🥲 Processus opérationnel + doi, ISSN -->
 
-::: columns
-::: {.column width="40%"}
-:::
+<!-- 🙂 4 articles publiés, 4 en révision, 3 en relecture -->
 
-::: {.column width="40%"}
-![](img/cloud.webp){.fragment width="450"}
-:::
-:::
+<!-- 🙂 des présentations (Montpellier, Toronto, Humastica, Grenoble, RR2023, -->
+<!-- GDR Ecostat, 5 Minutes) -->
 
-## Etape 1 - The new hope
+<!-- 🙂 [Réseau français Science -->
+<!-- Reproductible](https://www.recherche-reproductible.fr/) -->
 
-![](img/FAIR.png){width="450"}
+<!-- 🤯 Difficulté à trouver des relecteurs -->
 
-::: nonincremental
--   Findable: sufficient metadata and a unique and persistent
-    identifier - DOI.
--   Accessible: metadata and data should be readable by humans and by
-    machines, and it must reside in a trusted repository.
--   Interoperable: Data must share a common structure, and metadata must
-    use recognized, formal terminologies for description.
--   Reusable: Data and collections must have clear usage licenses and
-    clear provenance, and meet relevant community standards for the
-    domain.
-:::
+<!-- 🤔 Support institutionnel ? -->
 
-See [OpenAIre](https://www.openaire.eu/faqs)
+<!-- <br/> -->
 
-## Etape 2 - Old School
+<!-- ## Perpectives -->
 
-De l'importance de garder des traces des étapes du dévelopement
+<!-- -   Mise à disposition de moyens computationnels -->
+<!-- -   Support Gitlab complet (CI, docker, registre, etc.) -->
 
-![](img/Code_version.png){width="450"}
+<!-- ## Positionement/inspiration -->
 
-## Etape 2 - La Geekitude
+<!-- -   [Peer Community-In](https://peercommunityin.org/), -->
+<!--     [EpiSciences](https://www.episciences.org/) : philosophie différente -->
+<!-- -   <https://rescience.github.io/> : "remake' de l'existant -->
+<!-- -   <https://distill.pub> : techniquement compliqué et pur IA -->
 
-::: nonincremental
--   Produire des packages (R/ Python / Julia) déposées sur des
-    plateformes qui vérifient la qualité de la forme du code
-    ([CRAN](https://cran.r-project.org/),
-    [ROpenSci](https://ropensci.org/)) et de la documentation
 
--   Utiliser des outils de gestion de versions, par exemple git et des
-    repos publics [GitHub](https://github.com/),
-    [GitLab](https://about.gitlab.com/)
+<!-- ## Etape 1 - Old School -->
 
--   Développer à plusieurs et faire relire son code par les autres avant
-    de l'intégrer.
+<!-- ::: columns -->
+<!-- ::: {.column width="30%"} -->
+<!-- ![](img/disquettes.jpg){width="400"} -->
+<!-- ::: -->
 
--   Ecrire des tests unitaires, ....
-:::
+<!-- ::: {.column width="30%"} -->
+<!-- ![](img/DD.jpg){.fragment width="400"} -->
+<!-- ::: -->
+<!-- ::: -->
+
+<!-- ::: columns -->
+<!-- ::: {.column width="40%"} -->
+<!-- ::: -->
+
+<!-- ::: {.column width="40%"} -->
+<!-- ![](img/cloud.webp){.fragment width="450"} -->
+<!-- ::: -->
+<!-- ::: -->
+
+<!-- ## Etape 1 - The new hope -->
+
+<!-- ![](img/FAIR.png){width="450"} -->
+
+<!-- ::: nonincremental -->
+<!-- -   Findable: sufficient metadata and a unique and persistent -->
+<!--     identifier - DOI. -->
+<!-- -   Accessible: metadata and data should be readable by humans and by -->
+<!--     machines, and it must reside in a trusted repository. -->
+<!-- -   Interoperable: Data must share a common structure, and metadata must -->
+<!--     use recognized, formal terminologies for description. -->
+<!-- -   Reusable: Data and collections must have clear usage licenses and -->
+<!--     clear provenance, and meet relevant community standards for the -->
+<!--     domain. -->
+<!-- ::: -->
+
+<!-- See [OpenAIre](https://www.openaire.eu/faqs) -->
+
+<!-- ## Etape 2 - Old School -->
+
+<!-- De l'importance de garder des traces des étapes du dévelopement -->
+
+<!-- ![](img/Code_version.png){width="450"} -->
+
+<!-- ## Etape 2 - La Geekitude -->
+
+<!-- ::: nonincremental -->
+<!-- -   Produire des packages (R/ Python / Julia) déposées sur des -->
+<!--     plateformes qui vérifient la qualité de la forme du code -->
+<!--     ([CRAN](https://cran.r-project.org/), -->
+<!--     [ROpenSci](https://ropensci.org/)) et de la documentation -->
+
+<!-- -   Utiliser des outils de gestion de versions, par exemple git et des -->
+<!--     repos publics [GitHub](https://github.com/), -->
+<!--     [GitLab](https://about.gitlab.com/) -->
+
+<!-- -   Développer à plusieurs et faire relire son code par les autres avant -->
+<!--     de l'intégrer. -->
+
+<!-- -   Ecrire des tests unitaires, .... -->
+<!-- ::: -->
 
 <!-- ## Etape 2 - La Geekitude -->
 
@@ -391,9 +392,9 @@ De l'importance de garder des traces des étapes du dévelopement
 
 <!-- ::: -->
 
-## Etape 3 - Old School
+<!-- ## Etape 3 - Old School -->
 
--   Intégrer les figures et les résultats des codes dans le .tex (CTRL-C
-    CTRL-V)
+<!-- -   Intégrer les figures et les résultats des codes dans le .tex (CTRL-C -->
+<!--     CTRL-V) -->
 
--   Donner le pseudo code
+<!-- -   Donner le pseudo code -->
